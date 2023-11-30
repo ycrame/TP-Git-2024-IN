@@ -1,3 +1,5 @@
+import sys
+
 def fibonnaci(n):
     if n == 0:
         return 0
@@ -12,4 +14,3 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv)
-    
