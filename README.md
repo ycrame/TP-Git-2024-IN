@@ -95,11 +95,17 @@ Vous pouvez alors choisir les liges que vous voulez (la version de GitHub, la ve
 
 Comment auriez-vous pu faire pour avoir moins de difficultés à fusionner ?
 
-### Mettre vos modifications dans la branche main
+## Partie 3 : Mettre vos modifications sur la branche main
 
-La branche `main` étant protégée, vous ne pouvez pas mettre directement le code de votre branche dessus. Pour faire cela, vous devez passer par les **pull requests**.
+Avant de continuer, ajoutez les noms de votre binômes dans le fichier `NOMS.txt` à la racine du projet.
+
+Le but est maintenant d'ajouter vos modifications sur la branche `main`. Cette branche étant protégée, vous ne pouvez pas mettre directement le code de votre branche dessus. Pour faire cela, vous devez passer par les **pull requests**.
 Créez une pull request, faites bien attention au titre et à la description afin que l'on sache en quoi votre code consiste !
 
-Comme vous avez modifié le fichier `HelloWorld.java`, GitHub vous indiquera que vous ne pouvez pas fusionner vos changements avec la branche main car il y a des conflits. Aidez-vous de l'explication plus haut pour régler ce/ces conflit(s) en utilisant la commande `git rebase main` depuis votre branche binôme.
+Comme vous avez modifié le fichier `NOMS.txt`, GitHub vous indiquera que vous ne pouvez pas fusionner vos changements avec la branche main car il y a des conflits. Aidez-vous de l'explication plus haut pour régler ce/ces conflit(s) en utilisant la commande `git rebase main` depuis votre branche binôme.
 Une fois cela fait, votre pull request pourra être validée par un administrateur du dépôt GitHub et vos modifications pourront être mises dans la branche `main`.
 
+## Partie bonus : Morpion
+
+Si vous êtes arrivez jusque là, c'est que vous êtes prêt à utiliser Git pour coder pour de vrai !
+Codez un jeu de morpion en vous répartissant bien les tâches, notamment en découpant votre code en fonctions.
