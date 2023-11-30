@@ -21,19 +21,17 @@ Après avoir téléchargé git, configurez Git pour qu’il associe vos commits 
 Vous avez besoin d'un compte Github pour ce TP.
 Si vous ne possédez pas encore de compte github, vous pouvez le créer sur <https://github.com/join>.
 
+## Partie 1 : Hello world
+
+**IMPORTANT** : Les commandes données par la suite ne sont pas complètes, c'est à vous de trouver les bons arguments à ajouter ;) Vous pouvez vous aider des ressources de ce dépot ou d'Internet.
+
 ### Cloner le dépot
 
-Pour récupérer ce dépot en local sur votre pc.
-
-**Attention**, l'URL du dépot n'est pas l'URL dans la barre de navigation !
-
-## Partie 1 : Hello world
+Récupérez ce dépot en local sur votre PC en utilisant la commande `git clone`.
 
 ### Créer une branche et un dossier
 
 Chaque binôme travaille sur sa propre branche. Créez chez un membre du binôme votre branche (nommée `prénom1-prénom2`) avec `git branch`, puis placez vous sur celle-ci avec `git checkout`.
-
-**A noter** : Les commandes données ici ne sont pas complètes, c'est à vous de trouver les bons arguments à ajouter ;) Vous pouvez vous aider des ressources de ce dépot ou d'Internet.
 
 Créez aussi un dossier portant le même nom à la racine du projet, où vous placerez votre code.
 Créez votre fichier de code dans le langage de votre choix (Python par exemple). Faites en sorte que celui-ci affiche `Hello world` à l’exécution.
@@ -41,7 +39,7 @@ Créez votre fichier de code dans le langage de votre choix (Python par exemple)
 ### Partager les modifications
 
 Toutes ces actions étant faites sur un PC, il faut les partager pour que le second membre du binôme puisse y accéder !
-Il faut donc ajouter le fichier à Git et puis faire un commit.
+Il faut donc ajouter le fichier à Git avec `git add`, puis faire un commit avec `git commit`.
 Pensez de bien décrire ce que vous avez fait dans le message de commit ! Il faut ensuite pousser les modifications sur le depot GitHub avec `git push` (lisez bien les messages d'erreur si vous en avez, ils vont aideront à trouver la bonne commande).
 
 Pour voir si le code a bien été partagé, rendez vous sur Github et vérifiez que votre branche est bien apparue, avec votre fichier.
@@ -71,7 +69,7 @@ Pour cette partie, vous allez utiliser le template de code. Copiez le fichier `f
 
 ### Commits en parallèle
 
-Un membre du binôme complète la fonction `addition`, et l'autre la fonction `soustraction`. Chacun pousse ensuite ses changements.
+Un membre du binôme complète la fonction `addition()`, et l'autre la fonction `soustraction()`. Chacun pousse ensuite ses changements.
 
 La deuxième personne va avoir une surprise : des changements ont été poussés entre temps, et git ne veut pas les écraser !
 
@@ -80,7 +78,7 @@ Pour faire cela, il faut donner une stratégie à Git, nous allons utiliser le r
 
 ### Résolution de conflit
 
-Dans cette partie, les deux membres du binôme vont modifier la même fonction, `noms_binome`, qui doit afficher vos noms sur deux lignes différentes. Chacun rajoute le code pour afficher son nom et seulement son nom. Faites ensuite un commit et pousser vos changements.
+Dans cette partie, les deux membres du binôme vont modifier la même fonction, `noms_binome()`, qui doit afficher vos noms sur deux lignes différentes. Chacun rajoute le code pour afficher son nom et seulement son nom. Faites ensuite un commit et pousser vos changements.
 
 Comme vous avez normalement modifié la même ligne pour afficher votre nom, git ne sait pas quelle version garder !
 
