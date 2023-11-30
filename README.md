@@ -21,6 +21,8 @@ Après avoir téléchargé git, configurez Git pour qu’il associe vos commits 
 Vous avez besoin d'un compte Github pour ce TP.
 Si vous ne possédez pas encore de compte github, vous pouvez le créer sur <https://github.com/join>.
 
+On passera vous voir pour vous ajouter au repo, dites nous si on vous a oublié.
+
 ## Partie 1 : Hello world
 
 **IMPORTANT** : Les commandes données par la suite ne sont pas complètes, c'est à vous de trouver les bons arguments à ajouter ;) Vous pouvez vous aider des ressources de ce dépot ou d'Internet.
