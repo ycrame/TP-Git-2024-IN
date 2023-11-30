@@ -8,6 +8,9 @@ Git est un logiciel de gestion de versions. C'est-à-dire qu'il vous aide à gé
 
 Sur Linux, git est installé par défaut sur le système.
 Pour ce qui est de Windows et MacOS, il suffit de se rendre sur <https://git-scm.com/downloads> et de suivre les instructions de Windows / MacOS selon votre système.
+Après avoir téléchargé git, configurez Git pour qu’il associe vos commits à votre nom et adresse e-mail:
+    `git config --global user.name "Votre Nom"`
+    `git config --global user.email supermail@gmail.com`
 
 ### Créer un compte Github
 Vous avez besoin d'un compte Github pour ce TP.
@@ -19,18 +22,18 @@ L'objectif de ce TP est de créer en binome un Plus Ou Moins pour vous apprendre
 Le choix du langage de programmation est complètement libre.
 
 ### Cloner le dépot
-
 Pour récupérer ce dépot en local sur votre pc.
 
 **Attention** l'URL du dépot n'est pas l'URL dans la barre de navigation !
 
-### Créer une branche et un dossier
-
-Chaque binome travaille sur sa propre branche. Créez chez un membre votre propre branche (nommée `prémom1-prénom-2`) puis placez vous sur celle-ci.
-Créez aussi un dossier du portant le même nom à la racine du projet, votre code sera placé dans ce dossier.
-
 ### Hello, world
 
+Modifiez le fichier `HelloWorld.java` pour ajouter votre deux prénoms après "Hello, World"
+
+### Créer une branche et un dossier
+
+Chaque binome travaille sur sa propre branche. Créez chez un membre votre propre branche (nommée `prémom1-prénom2`) puis placez vous sur celle-ci.
+Créez aussi un dossier portant le même nom à la racine du projet, votre code sera placé dans ce dossier.
 Une fois ce dossier créé, créez votre fichier de code, faites en sorte que celui-ci affiche `Hello, world` à l'éxécution.
 
 ### Partager les modifications
@@ -57,6 +60,7 @@ Vous pouvez maintenant vous placer sur votre branche, le modifications sont main
 ### Coder le jeu
 
 C'est le moment de coder la logique du jeu. Pour bien utiliser les possibilités que vous offre git, pensez à répartir le travail entre les membres du binôme !
+Pour vous aider, partez du fichier `TemplatePlusOuMoins.java`. Chacun s'occupe d'une fonction.
 
 ### Fusionner votre travail
 
@@ -69,7 +73,7 @@ Il faut donc l'aider !
 
 Si tout s'est bien passé, au moins une personne a pu `push` (n'oubliez pas de `add` et `commit` avant) ses modifications, mais la deuxième personne se voit refuser le droit de partager les siennes.
 La deuxième personne doit donc récupérer les modification de la première et fusionner les modifications.
-Pour faire cela, il faut donner une stratégie à Git, nous allons utiliser le rebase, vous pouvez donc récupérer puis rebase en faisant `git pull --rebase`.
+Pour faire cela, il faut donner une stratégie à Git, nous allons utiliser le rebase, vous pouvez donc récupérer puis rebase en faisant `git rebase`.
 
 Si vous avez de la chance, git sait automatiquement fusionner les modification du fichier source.
 Avec moins de chance, il faut faire manuellement le travail de fusion des deux codes.
@@ -92,5 +96,6 @@ Comment auriez-vous pu faire pour avoir moins de difficultés à fusionner ?
 
 La branche `main` étant protégée, vous ne pouvez pas mettre directement le code de votre branche dessus. Pour faire cela, vous devez passer par les **pull requests**.
 Créez une pull request, faites bien attention au titre et à la description afin que l'on sache en quoi votre code consiste !
-Une fois cela fait, vos modifications pourront être mises dans la branche `main` par un administrateur du dépot sur Github.
+Comme vous avez modifié le fichier `HelloWorld.java`, GitHub vous indiquera que vous ne pouvez pas fusionner vos changements avec la branche main car il y a des conflits. Aidez-vous de l'explication plus haut pour régler ce/ces conflit(s) en utilisant la commande `git rebase main` depuis votre branche binôme.
+Une fois cela fait, votre pull request pourra être validée par un administrateur du dépôt GitHub et vos modifications pourront être mises dans la branche `main`.
 
