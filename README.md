@@ -9,7 +9,7 @@ N'hésitez pas à vous référer au [cours](Cours.pdf) ou aux slides [slides](Sl
 ### Installation de git
 
 Sur Linux, git est installé par défaut sur le système.
-Pour ce qui est de Windows et MacOS, il suffit de se rendre sur <https://git-scm.com/downloads> et de suivre les instructions de Windows / MacOS selon votre sy<!--  -->stème.
+Pour ce qui est de Windows et MacOS, il suffit de se rendre sur <https://git-scm.com/downloads> et de suivre les instructions de Windows / MacOS selon votre système.
 Après avoir téléchargé git, configurez Git pour qu’il associe vos commits à votre nom et adresse e-mail:
 
 `git config --global user.name "Votre Nom"`
@@ -31,15 +31,18 @@ Pour récupérer ce dépot en local sur votre pc.
 
 ### Créer une branche et un dossier
 
-Chaque binôme travaille sur sa propre branche. Créez chez un membre du binôme votre branche (nommée `prénom1-prénom2`) puis placez vous sur celle-ci.
+Chaque binôme travaille sur sa propre branche. Créez chez un membre du binôme votre branche (nommée `prénom1-prénom2`) avec `git branch`, puis placez vous sur celle-ci avec `git checkout`.
+
+**A noter** : Les commandes données ici ne sont pas complètes, c'est à vous de trouver les bons arguments à ajouter ;) Vous pouvez vous aider des ressources de ce dépot ou d'Internet.
+
 Créez aussi un dossier portant le même nom à la racine du projet, où vous placerez votre code.
-Créez votre fichier de code dans le langage de votre choix. Faites en sorte que celui-ci affiche `Hello world` à l’exécution.
+Créez votre fichier de code dans le langage de votre choix (Python par exemple). Faites en sorte que celui-ci affiche `Hello world` à l’exécution.
 
 ### Partager les modifications
 
 Toutes ces actions étant faites sur un PC, il faut les partager pour que le second membre du binôme puisse y accéder !
 Il faut donc ajouter le fichier à Git et puis faire un commit.
-Pensez de bien décrire ce que vous avez fait dans le message de commit ! Il faut ensuite pousser (push) les modifications sur le depot GitHub.
+Pensez de bien décrire ce que vous avez fait dans le message de commit ! Il faut ensuite pousser les modifications sur le depot GitHub avec `git push` (lisez bien les messages d'erreur si vous en avez, ils vont aideront à trouver la bonne commande).
 
 Pour voir si le code a bien été partagé, rendez vous sur Github et vérifiez que votre branche est bien apparue, avec votre fichier.
 
