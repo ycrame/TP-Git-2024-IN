@@ -4,6 +4,8 @@
 
 Git est un logiciel de gestion de versions. C'est-à-dire qu'il vous aide à gérer les différentes versions de votre code, ainsi qu'à collaborer à plusieurs sur un même projet.
 
+N'hésitez pas à vous référer au [cours](Cours.pdf) ou aux slides [slides](Slides.pdf) pour ce TP !
+
 ### Installation de git
 
 Sur Linux, git est installé par défaut sur le système.
