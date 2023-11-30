@@ -7,7 +7,7 @@ def fact(n):
         return n * fact(n-1)
 
 def main(argv):
-    print(fact(int(argv[1])))
+    print("Hello INSA")
 
 if __name__ == "__main__":
     main(sys.argv)
