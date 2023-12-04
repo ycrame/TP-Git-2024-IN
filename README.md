@@ -29,20 +29,25 @@ On passera vous voir pour vous ajouter au repo, dites nous si on vous a oublié.
 
 ### Cloner le dépot
 
-Récupérez ce dépot en local sur votre PC en utilisant la commande `git clone`.
+Récupérez ce dépot en local sur votre PC en utilisant la commande `git clone`. Déplacez vous dans le dossier ainsi crée.
 
 ### Créer une branche et un dossier
 
 Chaque binôme travaille sur sa propre branche. Créez chez un membre du binôme votre branche (nommée `prénom1-prénom2`) avec `git branch`, puis placez vous sur celle-ci avec `git checkout`.
 
 Créez aussi un dossier portant le même nom à la racine du projet, où vous placerez votre code.
-Créez votre fichier de code dans le langage de votre choix (Python par exemple). Faites en sorte que celui-ci affiche `Hello world` à l’exécution.
+Créez votre fichier de code dans le langage de votre choix. Faites en sorte que celui-ci affiche `Hello world` à l’exécution.
 
 ### Partager les modifications
 
 Toutes ces actions étant faites sur un PC, il faut les partager pour que le second membre du binôme puisse y accéder !
-Il faut donc ajouter le fichier à Git avec `git add`, puis faire un commit avec `git commit`.
-Pensez de bien décrire ce que vous avez fait dans le message de commit ! Il faut ensuite pousser les modifications sur le depot GitHub avec `git push` (lisez bien les messages d'erreur si vous en avez, ils vont aideront à trouver la bonne commande).
+Commencez par ajouter à Git les modifications apportées au fichier avec `git add` suivi du chemin vers le fichier.
+
+C'est le moment d'essayer la commande `git status`. Elle vous permet de voir les modifications qui seront enregistrées dans le prochain commit. Cette commande est très utile pour savoir où on en est. Prenez l'habitude de l'utiliser avant chaque commit pour être sûr de ce que vous faites.
+
+Vous pouvez maintenant enregistrer les modifications avec `git commit`. Pensez à bien décrire ce que vous avez fait dans le message de commit ! Pour écrire votre message directement dans le terminal, ajoutez `-m` à la commande suivi du message entre guillemets.
+
+Il faut ensuite pousser les modifications sur le dépot GitHub avec `git push` (lisez bien les messages d'erreur si vous en avez, ils vont aideront à trouver la bonne commande).
 
 Pour voir si le code a bien été partagé, rendez vous sur Github et vérifiez que votre branche est bien apparue, avec votre fichier.
 
@@ -50,16 +55,13 @@ Pour voir si le code a bien été partagé, rendez vous sur Github et vérifiez 
 
 Une fois les modifications en ligne, il faut les récupérer sur le second PC.
 
-Si vous essayez `git pull`, vous pouvez constater que cela ne marche pas, vous ne téléchargez pas les nouvelles modifications.
+Pour voir les branches que vous avez en local, vous pouvez utiliser `git branch` sans argument. Vous pouvez constater que vous n'avez que la branche `main` pour l'instant, et pas celle de votre binôme. Pour voir aussi les branches du dépot distant, ajoutez `--all` à la commande.
 
-Un rapide coup d'oeil à `git branch` vous donne la liste des branches présentes sur votre pc, ainsi que la branche sur laquelle vous vous trouvez actuellement.
-Vous pouvez constater que vous ne possédez que la branche `main`.
-En effet, `git pull` récupère les modifications de la branche sur laquelle vous êtes actuellement, mais ne récupère pas de nouvelles branches provenant du depot distant.
+Mais là encore, la branche de votre binôme ne s'affiche pas, pourquoi ? En fait, il faut mettre à jour en local les informations sur le dépot avec `git fetch`. Constatez maintenant que la branche est dans la liste.
 
-Pour cela, vous pouvez utiliser `git fetch`.
-Vous pouvez à nouveau consulter la liste de branches pour constater que cette fois-ci, de nouvelles branches sont apparues !
+Vous pouvez maintenant vous placer sur votre branche, ce qui a pour effet d'appliquer les commits, et donc de récupérer les modifications ! Comme vous venez de récupérer la branche sur votre machine, elle est à jour avec le dépot. Mais par la suite, il faudra récupérer les nouveaux commits avec `git pull`.
 
-Vous pouvez maintenant vous placer sur votre branche, les modifications sont maintenant récupérées !
+Que se passe-t-il si vous retournez sur la branche `main` ? Vous devriez maintenant comprendre comment Git vous permet d'avoir plusieurs versions d'un projet en parallèle.
 
 ### Plus de modifications
 
@@ -100,13 +102,17 @@ Comment auriez-vous pu faire pour avoir moins de difficultés à fusionner ?
 
 ## Partie 3 : Mettre vos modifications sur la branche main
 
-Avant de continuer, ajoutez les noms de votre binôme dans le fichier `NOMS.txt` à la racine du projet.
-
 Le but est maintenant d'ajouter vos modifications sur la branche `main`. Cette branche étant protégée, vous ne pouvez pas mettre directement le code de votre branche dessus. Pour faire cela, vous devez passer par les **pull requests**.
-Créez une pull request, faites bien attention au titre et à la description afin que l'on sache en quoi votre code consiste !
 
-Comme vous avez modifié le fichier `NOMS.txt`, GitHub vous indiquera que vous ne pouvez pas fusionner vos changements avec la branche main car il y a des conflits (les autres binômes on rajouter le leur sur la même ligne). Aidez-vous de l'explication plus haut pour régler ce/ces conflit(s) en utilisant la commande `git rebase main` depuis votre branche binôme.
-Une fois cela fait, votre pull request pourra être validée par un administrateur du dépôt GitHub et vos modifications pourront être mises dans la branche `main`.
+### Première pull request
+
+Créez une pull request pour votre branche. Faites bien attention au titre et à la description afin que l'on sache en quoi votre code consiste ! Une fois cela fait, vous pouvez demander à un administrateur du dépot GitHub de valider vos modifications, pour les mettre sur la branche `main`.
+
+### Pull request avec un conflit
+
+Nous allons maintenant essayer de faire une pull request qui rentre en conflit avec la branche `main`. Pour cela, chacun des membres du binôme créent une branche à leur nom. Sur ces branches, rajoutez chacun votre nom dans le fichier `NOMS.txt`, sur la même ligne. Faites ensuite les pull requests pour ces branches.
+
+Comme plus tôt, c'est celui qui passe en deuxième qui a des problèmes. Comme les changements sont en conflit, GitHub vous indique que les modifications ne peuvent pas être automatiquement appliquées sur le `main`. Aidez-vous de l'explication plus haut pour régler ce conflit en utilisant la commande `git rebase main` depuis votre branche locale.
 
 ## Partie bonus : Coder un jeu
 
