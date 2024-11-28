@@ -23,6 +23,26 @@ Si vous ne possédez pas encore de compte github, vous pouvez le créer sur <htt
 
 On passera vous voir pour vous ajouter au repo, dites nous si on vous a oublié.
 
+
+## Partie 0 : Prise en main
+
+Pour vous initier à Git nous vous proposons dans un premier temps de tester les commandes vues durant la partie théorique sur un PlayGround spécial git : [Git School](https://git-school.github.io/visualizing-git/#free) ou [Learning Git Branching](https://learngitbranching.js.org/?locale=fr_FR)
+
+Git School: 
+<img width="467" alt="image" src="https://github.com/user-attachments/assets/2d130404-3454-43b3-a14f-109d83805b50">
+
+Learning Git Branching:
+![image](https://github.com/user-attachments/assets/149b4ec4-8294-4579-ba76-4a4221f8c730)
+
+
+Initiez-vous à :
+- git branch
+- git checkout / git switch
+- git commit & git add
+- git push
+- git pull
+- git merge
+  
 ## Partie 1 : Hello world
 
 **IMPORTANT** : Les commandes données par la suite ne sont pas complètes, c'est à vous de trouver les bons arguments à ajouter ;) Vous pouvez vous aider des ressources de ce dépot ou d'Internet.
