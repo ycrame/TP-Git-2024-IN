@@ -30,11 +30,11 @@ Pour vous initier à Git nous vous proposons dans un premier temps de tester les
 
 **Git School:** 
 
-<img width="299" alt="image" src="https://github.com/user-attachments/assets/2d130404-3454-43b3-a14f-109d83805b50">
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/2d130404-3454-43b3-a14f-109d83805b50">
 
-Learning Git Branching:**
+**Learning Git Branching:**
 
-<img width="299" alt="image" src="https://github.com/user-attachments/assets/149b4ec4-8294-4579-ba76-4a4221f8c730">
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/149b4ec4-8294-4579-ba76-4a4221f8c730">
 
 
 
