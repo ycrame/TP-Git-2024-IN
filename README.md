@@ -28,11 +28,14 @@ On passera vous voir pour vous ajouter au repo, dites nous si on vous a oublié.
 
 Pour vous initier à Git nous vous proposons dans un premier temps de tester les commandes vues durant la partie théorique sur un PlayGround spécial git : [Git School](https://git-school.github.io/visualizing-git/#free) ou [Learning Git Branching](https://learngitbranching.js.org/?locale=fr_FR)
 
-Git School: 
-<img width="467" alt="image" src="https://github.com/user-attachments/assets/2d130404-3454-43b3-a14f-109d83805b50">
+**Git School:** 
 
-Learning Git Branching:
-![image](https://github.com/user-attachments/assets/149b4ec4-8294-4579-ba76-4a4221f8c730)
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/2d130404-3454-43b3-a14f-109d83805b50">
+
+Learning Git Branching:**
+
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/149b4ec4-8294-4579-ba76-4a4221f8c730">
+
 
 
 Initiez-vous à :
